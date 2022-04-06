@@ -5,20 +5,20 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="static/styles.css">
 </head>
-<body>
+
+<body id="body2">
 
 <a href="/">Powrót na stronę główną</a>
 
-<table>
- <tr>
-  <th><img src="{{ url_for('static', filename='kot.jpg') }}" alt="Cat1"><</th>
-  <th><img src="{{ url_for('static', filename='kot1.jpg') }}" alt="Cat2"></th>
- </tr>
- <tr>
-  <th><img src="{{ url_for('static', filename='kot2.jpg') }}" alt="Cat3"></th>
-  <th><img src="{{ url_for('static', filename='kot3.jpg') }}" alt="Cat4"></th>
- </tr>
-</table>
+<div class="cont">
+<img src="jpeg1.jpeg" alt="Pic1" class="photo" onclick="moveElement()">
+
+<img src="jpg2.jpg" alt="Pic2" class="photo" onclick="moveElement()">
+
+<img src="jpg3.jpg" alt="Pic3" class="photo" onclick="moveElement()">
+
+<img src="jpg4.jpg" alt="Pic4" class="photo" onclick="moveElement()">
+</div>
 
 </body>
 </html>
