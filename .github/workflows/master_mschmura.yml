@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'MSchmura'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E2C81FF77D240BD97119E1715A17CDF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_97B3310568B64CA7B2786D30D92246A5 }}
