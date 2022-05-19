@@ -64,3 +64,7 @@
 	max-width: 45%;
 	background: #79C99E;
 }
+
+.container {
+  display: flex;
+}
