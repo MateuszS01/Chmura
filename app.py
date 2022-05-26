@@ -37,5 +37,10 @@ def gallery():
     return app.send_static_file('gallery.html')
 
 
+@app.route('/ksiegagosci')
+def ksiegagosci():
+    return app.send_static_file('ksiegagosci.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
