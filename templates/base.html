@@ -19,10 +19,27 @@ crossorigin="anonymous"></script>
 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 crossorigin="anonymous"></script>
 <title>{% block title %} {% endblock %}</title>
+    <style>
+        .post {
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3
+        }
+
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 {% include "include/menu.html" %}
 {% block body %}
 {% endblock %}
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
 </body>
 </html>

@@ -5,6 +5,17 @@
 {% block title %}Home{% endblock %}
 {% set active_page = "index" -%}
 {% block body %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class='post'>
+            <p>{{ post['created'] }}</p>
+            <h2>{{ post['title'] }}</h2>
+            <p>{{ post['content'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -25,13 +36,11 @@ slide">
 alt="Third slide">
 </div>
 </div>
-<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-
-slide="prev">
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 <span class="sr-only">Previous</span>
 </a>
-<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-
-slide="next">
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
 <span class="carousel-control-next-icon" aria-hidden="true"></span>
 <span class="sr-only">Next</span>
 </a>
@@ -52,12 +61,6 @@ fermentum dolor sagittis vulputate.</p>
 </head>
 <body>
 <h1>Moje Portfolio</h1>
-
-<a href="static/gallery.html">Galeria</a>
-
-<a href="static/about.html">O mnie</a>
-
-<a href="static/ksiegagosci.html">YFKFGUKFGKU</a>
 
 </body>
 </html>
