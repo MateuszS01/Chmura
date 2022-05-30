@@ -7,8 +7,9 @@
     {% for post in posts %}
         <div class='post'>
             <p>{{ post['created'] }}</p>
-            <h2>{{ post['title'] }}</h2>
-            <p>{{ post['content'] }}</p>
+            <h2>{{ post['tytul'] }}</h2>
+            <p>{{ post['text'] }}</p>
+            <p>{{ post['nick'] }}</p>
         </div>
     {% endfor %}
 {% endblock %}
